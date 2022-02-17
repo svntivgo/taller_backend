@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+package com.example.demo.models;
 
 import javax.persistence.*;
 
