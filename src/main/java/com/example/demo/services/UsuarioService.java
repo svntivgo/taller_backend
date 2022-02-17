@@ -1,12 +1,12 @@
 package com.example.demo.services;
 
-import com.example.demo.repositories.usuarioRepository;
+import com.example.demo.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class usuarioService {
+public class UsuarioService {
 
     @Autowired
-    usuarioRepository usuarioRepository;
+    UsuarioRepository usuarioRepository;
 }
