@@ -15,7 +15,11 @@ public class UsuarioService {
     UsuarioRepository usuarioRepository;
 
     public ArrayList<UsuarioModel> obtenerUsuario () {
-        return (ArrayList<UsuarioModel>)usuarioRepository.findAll();
+        return (ArrayList<UsuarioModel>) usuarioRepository.findAll();
+    }
+
+    public ArrayList<UsuarioModel> obtenerPorNombre (String nombre) {
+        return usuarioRepository.findByNombre(nombre);
     }
 
     public UsuarioModel guardarUsuario (UsuarioModel usuario) {
