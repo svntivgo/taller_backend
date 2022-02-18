@@ -39,5 +39,13 @@ public class UsuarioService {
         }
     }
 
+    public Boolean eliminarTodosLosUsuarios () {
+        try {
+            usuarioRepository.deleteAll();
+            return true;
+        } catch (Exception err) {
+            return false;
+        }
+    }
 
 }
