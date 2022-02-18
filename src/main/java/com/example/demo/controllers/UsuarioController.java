@@ -44,4 +44,14 @@ public class UsuarioController {
         }
     }
 
+    @DeleteMapping(path = "/eliminar-todos")
+    public String eliminarTodos () {
+        Boolean ok = this.usuarioService.eliminarTodosLosUsuarios();
+        if (ok) {
+            return "Se eliminaron todos los usuarios";
+        } else {
+            return "No se pudieron eliminar todos los usuarios";
+        }
+    }
+
 }
